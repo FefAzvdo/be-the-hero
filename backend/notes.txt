@@ -1,0 +1,58 @@
+Métodos HTTP:
+
+GET: Buscar/listar uma informação no back-end
+POST: Criar uma informação no back-end
+PUT: Alterar uma informação no back-end
+DELETE: Deletar uma informação no back-end
+
+Tipos de parâmetros:
+
+QUERY PARAMS: Parâmetros nomeados enviados na rota apos "?" (Filtros, paginação) =>>
+
+  ex: http://localhost:3333/users?page=2&nome=Fernando&idade=26
+
+  app.get('/users/:id', (req, res) => {
+    const params = req.query;
+
+    console.log(params) // {page: '2', nome: 'Fernando', idade: '26'}
+
+    return res.json({"message": "route params"})
+  }) 
+
+
+ROUTE PARAMS: Parâmetros utilizados para identificar recursos =>>
+
+  ex: http://localhost:3333/users/25
+
+  app.get('/users/:id', (req, res) => {
+    const params = request.params;
+
+    console.log(params) // {id: '25'}
+
+    return res.json({"message": "route params"})
+  })
+
+
+REQUEST BODY: Corpo da requisição, utilizado para criar ou alterar um usuário
+
+SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+NoSQL: MongoDB, CouchDB, etc
+
+Driver: SELECT * FROM users
+Query Builder: table('users').select('*').where
+
+
+
+ENTIDADES:
+  * ONG
+  * Caso (incident)
+
+FUNCIONALIDADE:
+  * Login de ONG
+  * Logout de ONG
+  * Cadastro de ONG
+  * Cadastro de novos casos
+  * Deletar novos casos
+  * Listar casos específicos de uma ONG
+  * Listar todos os casos
+  * Entrar em contato com a ONG
