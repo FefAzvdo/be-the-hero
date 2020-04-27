@@ -8,4 +8,4 @@ Utilizamos #ReactJS para criar a aplicação Web. É através dela que realizamo
 
 Para o App mobile, utilizamos o #Expo e #ReactNative. Nele, o usuário ao entrar recebe a listagem de todos os casos disponíveis e através de uma integração com WhatsApp ou E-mail, pode entrar em contato com a ONG responsável pelo caso, e mandar uma mensagem automática contendo os dados e valor do caso.
 
-Obrigado a todos envolvidos por disponibilizar esse conteúdo excelente e gratuito. @Rocketseat
+Obrigado a todos envolvidos por disponibilizar esse conteúdo excelente e gratúito. @Rocketseat
